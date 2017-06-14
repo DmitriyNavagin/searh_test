@@ -1,4 +1,4 @@
-<acceptance-test-run title="Search test" name="searchTest" steps="0" successful="0" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="33409" timestamp="2017-06-14T04:50:33.517+03:00" session-id="89ba07d21fbbc3782d1f3b00a80cf10e" test-source="JUnit">
+<acceptance-test-run title="Search test" name="searchTest" steps="0" successful="0" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="15838" timestamp="2017-06-14T21:07:11.416+03:00" session-id="c8b63ce65dbdf5f514e186c0e743754a" test-source="JUnit">
   <user-story id="test.SearchTest" name="Search test" path="test"/>
   <tags>
     <tag name="Search test" type="story"/>

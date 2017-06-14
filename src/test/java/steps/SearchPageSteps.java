@@ -7,6 +7,8 @@ import net.thucydides.core.annotations.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.SearchPage;
 
 import java.util.List;
@@ -34,6 +36,12 @@ public class SearchPageSteps extends PageObject {
     @Step("Получение первой ссылки и проверка что она связана с сайтом Selenium")
     public String firstLinkCheck (WebDriver driver) {
         String firstLink;
+
+        (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
+            public Boolean apply(WebDriver d) {
+                return d.getTitle().toLowerCase().startsWith("selenium");
+            }
+        });
 
         List<WebElement> links = searchPage.links(driver);
 

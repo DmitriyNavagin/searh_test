@@ -11,6 +11,10 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import ru.yandex.qatools.allure.annotations.Features;
+import ru.yandex.qatools.allure.annotations.Stories;
+import ru.yandex.qatools.allure.annotations.TestCaseId;
+import ru.yandex.qatools.allure.annotations.Title;
 import steps.SearchPageSteps;
 
 import java.util.List;
@@ -23,6 +27,8 @@ import static junit.framework.Assert.assertEquals;
 public class SearchTest extends PageObject{
 
     @Managed(driver = "chrome")
+
+
 
     public WebDriver driver;
 
@@ -37,6 +43,10 @@ public class SearchTest extends PageObject{
     }
 
 
+    @Title("Поиск по слову Selenium")
+    @Features("Поиск")
+    @Stories("Поиск по слову ")
+    @TestCaseId("1")
     @Test
     public void searchTest(){
         String firstTimeLink;
